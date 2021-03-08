@@ -1,4 +1,4 @@
-FROM registry.univ-lr.fr:81/iutlr-info/iutlr-info-nodejs14-15-5
+FROM registry.univ-lr.fr:80/iutlr-info/iutlr-info-nodejs14-15-5
 
 LABEL MAINTAINER="Jamal Malki <jmalki@univ-lr.fr>"
 LABEL Vendor="Jamal Malki"
