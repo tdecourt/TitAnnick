@@ -1,4 +1,4 @@
-FROM registry.univ-lr.fr:81/iutlr-info/iutlr-info-apache2-php7.4-symfony5
+FROM registry.univ-lr.fr:80/iutlr-info/iutlr-info-apache2-php7.4-symfony5
 
 LABEL Maintainer="Jamal Malki <jmalki@univ-lr.fr>"
 LABEL Vendor="Jamal Malki"
