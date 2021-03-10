@@ -1,5 +1,6 @@
 Le Guennec Alexis
 Mousset Gael
+Chambon Matthieu
 
 ## Configuration Docker nécessaire
 
