@@ -1,6 +1,8 @@
-Le Guennec Alexis  
-Mousset Gael  
-Chambon Matthieu  
+Membres de l'équipe :
+* Le Guennec Alexis
+* Mousset Gael
+* Chambon Matthieu
+* Decourty Thomas
 
 ## Configuration Docker nécessaire
 
