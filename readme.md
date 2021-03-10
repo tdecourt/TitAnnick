@@ -1,3 +1,4 @@
+Le Guennec Alexis
 
 ## Configuration Docker nécessaire
 
