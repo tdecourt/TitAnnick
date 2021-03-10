@@ -1,4 +1,5 @@
 Le Guennec Alexis
+Mousset Gael
 
 ## Configuration Docker nécessaire
 
