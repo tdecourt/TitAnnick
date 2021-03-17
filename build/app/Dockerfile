@@ -15,6 +15,8 @@ WORKDIR ${APP_DOCUMENT_ROOT}
 ####### angular/cli
 RUN npm i -g @angular/cli
 
+COPY app/package.json app/package-lock.json ./
+
 ####### Install dependecies
 RUN npm i
 

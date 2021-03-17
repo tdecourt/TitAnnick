@@ -1,0 +1,9 @@
+<p>
+    flotte works!
+  </p>
+  <div *ngFor="let bateau of bateaux">
+    <a [title]="bateau.name + ' details'" [routerLink]="['/bateaux', bateau.id]">
+      {{ bateau.name }}
+    </a>
+  </div>
+  
