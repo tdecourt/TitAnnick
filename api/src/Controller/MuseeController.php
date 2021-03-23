@@ -46,4 +46,23 @@ class MuseeController extends AbstractController
 
         return $view;
     }
+
+    /**
+     * @Rest\View()
+     * @Rest\Get(
+     *      "api/musee/image",
+     *      name="museeimage"
+     * )
+     */
+    public function museeimage(
+        MuseeRepository $repo
+    )
+    {
+        $musee = $repo->findAll()[0]->getImage();
+
+        $view = View::create($musee);
+        $view->setFormat('json');
+
+        return $view;
+    }
 }
