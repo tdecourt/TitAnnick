@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { BateauComponent } from './bateau/bateau.component';
 import { FlotteComponent } from './flotte/flotte.component';
 import { GalerieComponent } from './galerie/galerie.component';
+import { MenuBarComponent } from './menu-bar/menu-bar.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { GalerieComponent } from './galerie/galerie.component';
     AccueilComponent,
     BateauComponent,
     FlotteComponent,
-    GalerieComponent
+    GalerieComponent,
+    MenuBarComponent
   ],
 
   imports: [
