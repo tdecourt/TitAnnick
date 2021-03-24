@@ -1,9 +1,11 @@
-<p>
-    flotte works!
-  </p>
-  <div *ngFor="let bateau of bateaux">
-    <a [title]="bateau.name + ' details'" [routerLink]="['/bateaux', bateau.id]">
-      {{ bateau.name }}
+<h1>La Flotte</h1>
+<div class="card mb-3 d-flex flex-row" *ngFor="let bateau of bateaux">
+    <a class="w-50" [routerLink]="['/bateaux/', bateau.id]">
+        <img class="w-100" src="{{ bateau.image }}" class="card-img-top" alt="{{ bateau.image }}">
     </a>
-  </div>
-  
+    <div class="card-body">
+        <h5 class="card-title">{{ bateau.nom }}</h5>
+        <p class="card-text" *ngIf="bateau.estOuvert">Visitable</p>
+        <p class="card-text" *ngIf="!bateau.estOuvert">Interdit au publique</p>
+    </div>
+</div>
