@@ -1,5 +1,5 @@
-<h1>La Flotte</h1>
-<div class="card mb-3 d-flex flex-row" *ngFor="let bateau of bateaux">
+<h1 class="mx-3">La Flotte</h1>
+<div class="card mb-3 mx-3 d-flex flex-row" *ngFor="let bateau of bateaux">
     <a class="w-50" [routerLink]="['/bateaux/', bateau.id]">
         <img class="w-100" src="{{ bateau.image }}" class="card-img-top" alt="{{ bateau.image }}">
     </a>
