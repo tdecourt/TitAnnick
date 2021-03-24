@@ -8,7 +8,7 @@ import { bateaux } from "../bateaux";
   styleUrls: ['./bateau.component.css']
 })
 export class BateauComponent implements OnInit {
-  bateau: { id: number; name: string; description: string; } | undefined;
+  bateau: { id: number; nom: string; } | undefined;
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
