@@ -9,6 +9,7 @@ import { BateauComponent } from './bateau/bateau.component';
 import { FlotteComponent } from './flotte/flotte.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
+import { AccueilHeaderComponent } from './accueil-header/accueil-header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
     BateauComponent,
     FlotteComponent,
     GalerieComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    AccueilHeaderComponent
   ],
 
   imports: [
