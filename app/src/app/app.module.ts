@@ -10,6 +10,7 @@ import { FlotteComponent } from './flotte/flotte.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AccueilHeaderComponent } from './accueil-header/accueil-header.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AccueilHeaderComponent } from './accueil-header/accueil-header.componen
     FlotteComponent,
     GalerieComponent,
     MenuBarComponent,
-    AccueilHeaderComponent
+    AccueilHeaderComponent,
+    MapComponent
   ],
 
   imports: [
