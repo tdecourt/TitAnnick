@@ -11,15 +11,15 @@ import * as mapboxgl from 'mapbox-gl';
 
   export class MapComponent implements OnInit {
 
-  map: mapboxgl.Map;
+  private map: mapboxgl.Map | undefined;
   style = 'mapbox://styles/mapbox/streets-v11';
   lat = 46.1558;
   lng = -1.1532;
 
   constructor() { }
 
-
-  ngOnInit() {
+  ngOnInit(): void {
+    // @ts-ignore
     Object.getOwnPropertyDescriptor(mapboxgl, 'accessToken').set(environment.mapbox.accessToken);
     this.map = new mapboxgl.Map({
       container: 'map',
@@ -31,3 +31,4 @@ import * as mapboxgl from 'mapbox-gl';
     this.map.addControl(new mapboxgl.NavigationControl());
   }
 }
+
