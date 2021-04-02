@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { bateaux } from "../bateaux";
+import { BATEAUX } from "../mock-bateaux";
 
 @Component({
     selector: 'app-flotte',
@@ -7,7 +7,7 @@ import { bateaux } from "../bateaux";
     styleUrls: ['./flotte.component.css']
 })
 export class FlotteComponent implements OnInit {
-    bateaux = bateaux;
+    bateaux = BATEAUX;
     constructor() {}
 
     ngOnInit() {}
