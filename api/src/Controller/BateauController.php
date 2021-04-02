@@ -25,4 +25,19 @@ class BateauController extends AbstractController
         $bateau = $repo->find($request->get('id'));
         return $bateau;
     }
+
+    /**
+     * @Rest\View(serializerGroups={"listeBateaux"})
+     * @Rest\Get(
+     *      "/api/bateaux",
+     *      name="listeBateau"
+     * )
+     */
+    public function listeBateau(
+        BateauRepository $repo
+    )
+    {
+        $bateau = $repo->findAll();
+        return $bateau;
+    }
 }
