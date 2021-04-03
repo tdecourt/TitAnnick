@@ -3,4 +3,5 @@ export interface Bateau {
     nom: string;
     image: string;
     estOuvert: boolean;
+    detail: string;
 }

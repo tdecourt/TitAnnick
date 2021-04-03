@@ -1,1 +1,7 @@
-<p>bateau-detail works!</p>
+<div *ngIf="bateau">
+    <h2 class="text-center">{{ bateau.nom }}</h2>
+    <img class="w-100" src="{{ bateau.image }}" class="card-img-top" alt="{{ bateau.image }}">
+    <p class="card-text" *ngIf="bateau.estOuvert">Visitable</p>
+    <p class="card-text" *ngIf="!bateau.estOuvert">Interdit au public</p>
+    <H5 class="text-justify">{{bateau.detail}}</H5>
+</div>

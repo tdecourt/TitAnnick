@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+
+import {Bateau} from '../bateau'
+import { BateauService } from '../bateau.service';
 
 @Component({
   selector: 'app-bateau-detail',
@@ -7,9 +12,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BateauDetailComponent implements OnInit {
 
-  constructor() { }
+  bateau: Bateau | undefined;
+  
+
+  constructor(  
+    private route: ActivatedRoute,
+    private bateauService: BateauService,
+    private location: Location
+    ) { }
 
   ngOnInit(): void {
+    this.getBateau();
+  }
+
+  getBateau(): void {
+    const id = Number(this.route.snapshot.paramMap.get('bateauId'));
+    this.bateauService.getBateau(id).subscribe(bateau => this.bateau = bateau);
+
   }
 
 }
