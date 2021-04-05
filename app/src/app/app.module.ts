@@ -10,6 +10,7 @@ import { FlotteComponent } from './flotte/flotte.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AccueilHeaderComponent } from './accueil-header/accueil-header.component';
+import { MeteoComponent } from './meteo/meteo.component';
 import { MapComponent } from './map/map.component';
 import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
 
@@ -22,8 +23,9 @@ import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
     GalerieComponent,
     MenuBarComponent,
     AccueilHeaderComponent,
-    MapComponent,
-    BateauDetailComponent
+    BateauDetailComponent,
+    MeteoComponent,
+    MapComponent
   ],
 
   imports: [
