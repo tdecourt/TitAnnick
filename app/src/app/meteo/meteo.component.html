@@ -1,0 +1,7 @@
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header">Météo de la semaine à La Rochelle</div>
+    <div class="card-body text-primary">
+        <p *ngFor="let meteo of meteos" class="card-text">{{meteo.day}} {{meteo.date}} <img src={{meteo.icon}}
+                width="60" height="60"> {{meteo.tempMin}}°C / {{meteo.tempMax}}°C</p>
+    </div>
+</div>
