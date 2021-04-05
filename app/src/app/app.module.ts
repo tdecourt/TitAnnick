@@ -12,6 +12,7 @@ import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AccueilHeaderComponent } from './accueil-header/accueil-header.component';
 import { MeteoComponent } from './meteo/meteo.component';
 import { MapComponent } from './map/map.component';
+import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MapComponent } from './map/map.component';
     GalerieComponent,
     MenuBarComponent,
     AccueilHeaderComponent,
+    BateauDetailComponent,
     MeteoComponent,
     MapComponent
   ],
