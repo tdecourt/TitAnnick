@@ -3,5 +3,5 @@
     <img class="w-100" src="{{ bateau.image }}" class="card-img-top" alt="{{ bateau.image }}">
     <p class="card-text" *ngIf="bateau.estOuvert">Visitable</p>
     <p class="card-text" *ngIf="!bateau.estOuvert">Interdit au public</p>
-    <H5 class="text-justify">{{bateau.detail}}</H5>
+    <H5 class="text-justify">{{bateau.infos_generale}}</H5>
 </div>
