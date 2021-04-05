@@ -75,7 +75,7 @@ export class MapComponent implements OnInit {
       new mapboxgl.Marker(el)
         .setLngLat([marker.geometry.coordinates[0], marker.geometry.coordinates[1]])
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setHTML('<p><strong> nom du bateau : </strong><br>' + marker.properties.nom + '<br>' + estOuvert + '</p>'))
+          .setHTML('<p><strong> Nom du bateau : </strong><br>' + marker.properties.nom + '<br>' + estOuvert + '</p>'))
         .addTo(map);  
     });
   }

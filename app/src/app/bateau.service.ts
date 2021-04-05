@@ -14,11 +14,11 @@ export class BateauService {
     const bateaux = of(BATEAUX);
     return bateaux;
   }
-}
+
 
   getBateau(id: number): Observable<Bateau>{
     const bateau = BATEAUX.find(h => h.id === id) as Bateau;
-    return of(hero);
+    return of(bateau);
   }
 }
 
