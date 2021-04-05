@@ -12,7 +12,7 @@ services:
       - 4200:4200
     volumes:
       - "./app:/var/www/apps/app"
-      #- /var/www/apps/app-angular/node_modules
+      - node_modules:/var/www/apps/app/node_modules
     networks:
       - back-network
     depends_on:
@@ -53,3 +53,5 @@ services:
 networks:
   back-network: 
     driver: bridge
+volumes:
+    node_modules:

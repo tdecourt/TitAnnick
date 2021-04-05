@@ -15,6 +15,8 @@ WORKDIR ${APP_DOCUMENT_ROOT}
 ####### angular/cli
 RUN npm i -g @angular/cli
 
+COPY app/package.json app/package-lock.json ./
+
 ####### Install dependecies
 RUN npm i
 
@@ -22,4 +24,4 @@ RUN npm i
 EXPOSE 4200
 
 ####### Serve the app
-CMD ["ng","serve","--host", "0.0.0.0"]
+CMD ["ng","serve","--host", "0.0.0.0", "--poll=2000"]
