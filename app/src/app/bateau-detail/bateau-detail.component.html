@@ -1,6 +1,14 @@
 <div *ngIf="bateau">
-    <h2 class="text-center">{{ bateau.nom }}</h2>
-    <img class="w-100" src="{{ bateau.image }}" class="card-img-top" alt="{{ bateau.image }}">
+    <div class="position-relative">
+        <!--thumbnail img-->
+        <div class="ratio_right-cover-2 image-wrapper">
+            <img class="img-fluid" src="{{ bateau.image }}" alt="">
+        </div>
+        <div class="position-absolute p-2 p-lg-3 b-0 w-100 bg-shadow">
+            <!--title-->
+            <h2 class="h1 text-white my-1 text-right">{{ bateau.nom }}</h2>
+        </div>
+    </div>
     <p class="card-text" *ngIf="bateau.estOuvert">Visitable</p>
     <p class="card-text" *ngIf="!bateau.estOuvert">Interdit au public</p>
     <H5 class="text-justify">{{bateau.infos_generale}}</H5>
