@@ -3,4 +3,8 @@ export interface Bateau {
     nom: string;
     image: string;
     estOuvert: boolean;
+    infos_generale: string;
+    histoire: string;
+    latitude: number;
+    longitude: number;
 }
