@@ -11,6 +11,7 @@ import { GalerieComponent } from './galerie/galerie.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AccueilHeaderComponent } from './accueil-header/accueil-header.component';
 import { MeteoComponent } from './meteo/meteo.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MeteoComponent } from './meteo/meteo.component';
     GalerieComponent,
     MenuBarComponent,
     AccueilHeaderComponent,
-    MeteoComponent
+    MeteoComponent,
+    MapComponent
   ],
 
   imports: [

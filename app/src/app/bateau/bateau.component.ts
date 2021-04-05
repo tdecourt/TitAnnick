@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
-import { bateaux } from "../bateaux";
+import { BATEAUX } from "../mock-bateaux";
 
 @Component({
   selector: 'app-bateau',
@@ -17,6 +17,6 @@ export class BateauComponent implements OnInit {
     const bateauIdFromRoute = Number(routeParams.get("bateauId"));
 
     // Find the product that correspond with the id provided in route.
-    this.bateau = bateaux.find(bateau => bateau.id === bateauIdFromRoute);
+    this.bateau = BATEAUX.find(bateau => bateau.id === bateauIdFromRoute);
   }
 }
