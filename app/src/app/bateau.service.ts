@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-
 import { Bateau } from './bateau';
 import { BATEAUX } from './mock-bateaux';
 
@@ -16,3 +15,10 @@ export class BateauService {
     return bateaux;
   }
 }
+
+  getBateau(id: number): Observable<Bateau>{
+    const bateau = BATEAUX.find(h => h.id === id) as Bateau;
+    return of(hero);
+  }
+}
+
