@@ -1,26 +1,20 @@
 <app-accueil-header></app-accueil-header>
 
-<div class="container">
-    <div class="row justify-content-center">
+<button (click)="isOn=false" mat-stroked-button color="primary">Map</button>
+<button (click)="isOn=true" mat-stroked-button color="primary">Météo</button>
 
-        <div class="col-6 text-center">
-            <h4>Ouverture</h4>
-            <p> Aujourd'hui 9h - 19h</p>
-            <p> Mercredi 9h - 19h</p>
-            <p> Jeudi 9h - 19h</p>
-        </div>
+<app-map *ngIf="!isOn"></app-map>
+<app-meteo *ngIf="isOn"></app-meteo>
 
-        <div class="col-6 text-center">
+<!--
+    <mat-tab-group dynamicHeight>
+        <mat-tab label="Short tab">
             
-        </div>
-    </div>
-
-    <app-meteo></app-meteo>
-
+            <app-meteo></app-meteo>
+        </mat-tab>
+        <mat-tab label="Long tab">
+            <app-map></app-map>
+        </mat-tab>
+    </mat-tab-group>
     
-
-</div>
-
-<div class="divstyle">
-    <app-map></app-map>
-    </div>
+-->

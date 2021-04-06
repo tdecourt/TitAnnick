@@ -1,0 +1,15 @@
+.toolbarNav{  
+    position: fixed;
+    bottom: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: #303030;
+
+}
+
+.material-icons.md-48 { font-size: 40px; }
+
+.material-icons.md-light { color: rgb(255, 255, 255); }
+.material-icons.md-light:hover { color: #33d9b2; }

@@ -28,7 +28,7 @@ export class MeteoComponent implements OnInit {
         this.days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
         this.meteos = [];
 
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 4; i++) {
 
           this.timestamp = resJson.daily[i].dt;
           this.timestamp = new Date(this.timestamp * 1000);
