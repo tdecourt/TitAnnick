@@ -50,7 +50,9 @@ export class MapComponent implements OnInit {
         'type': 'Feature',
         'properties': {
           'nom': bateau.nom,
-          'iconSize': [22, 22]
+          'iconSize': [22, 22],
+          'pathImage': bateau.image,
+          'idBateau': bateau.id
         },
         'geometry': {
           'type': 'Point',
@@ -75,7 +77,7 @@ export class MapComponent implements OnInit {
       new mapboxgl.Marker(el)
         .setLngLat([marker.geometry.coordinates[0], marker.geometry.coordinates[1]])
         .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setHTML('<p><strong> Nom du bateau : </strong><br>' + marker.properties.nom + '<br>' + estOuvert + '</p>'))
+          .setHTML('<a href="http://localhost:4200/bateaux/' + marker.properties.idBateau + '/"><p><strong> Nom du bateau : </strong><br>' + marker.properties.nom + '<br>' + estOuvert + '</p><img src=' + marker.properties.pathImage + ' height="50%" width="50%"></img></a>'))
         .addTo(map);  
     });
   }
