@@ -1,20 +1,11 @@
 <app-accueil-header></app-accueil-header>
 
-<button (click)="isOn=false" mat-stroked-button color="primary">Map</button>
-<button (click)="isOn=true" mat-stroked-button color="primary">Météo</button>
+<div class="buttons">    
+    <button (click)="isOn=false" mat-stroked-button color="primary">Map</button>
+    <button (click)="isOn=true" mat-stroked-button color="primary">Météo</button>
+</div>
 
 <app-map *ngIf="!isOn"></app-map>
-<app-meteo *ngIf="isOn"></app-meteo>
-
-<!--
-    <mat-tab-group dynamicHeight>
-        <mat-tab label="Short tab">
-            
-            <app-meteo></app-meteo>
-        </mat-tab>
-        <mat-tab label="Long tab">
-            <app-map></app-map>
-        </mat-tab>
-    </mat-tab-group>
-    
--->
+<div class="content">
+    <app-meteo *ngIf="isOn"></app-meteo>
+</div>
