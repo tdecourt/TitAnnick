@@ -13,6 +13,12 @@ import { AccueilHeaderComponent } from './accueil-header/accueil-header.componen
 import { MeteoComponent } from './meteo/meteo.component';
 import { MapComponent } from './map/map.component';
 import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -29,6 +35,10 @@ import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
   ],
 
   imports: [
+    MatTabsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
@@ -36,7 +46,8 @@ import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
       { path: "galerie", component: GalerieComponent },
       { path: "bateaux", component: FlotteComponent },
       { path: "bateaux/:bateauId", component: BateauComponent }
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

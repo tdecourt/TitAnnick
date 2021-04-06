@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccueilComponent implements OnInit {
 
+  isOn : any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.isOn = false;
   }
 
 }
