@@ -1,7 +1,11 @@
 <head>
     <link rel="stylesheet" href="menu-bar.component.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
 </head>
 
+<!--
 <div id="spacing" style="height: 55px;"></div>
 <div id="menu_bar" class="row fixed-bottom bg-light p-2">
 
@@ -18,3 +22,11 @@
         <img src="..\assets\img\gallery.png" alt="Icone de galerie" width="50" height="50" />
     </a>
 </div>
+-->
+
+<div id="spacing" style="height: 70px;"></div>
+<mat-toolbar class="toolbarNav">
+    <span [routerLink]="['/bateaux']" class="material-icons md-light md-48">sailing</span>
+    <span [routerLink]="['/']" class="material-icons md-light md-48">home</span>
+    <span [routerLink]="['/galerie']" class="material-icons md-light md-48">collections</span>
+</mat-toolbar>

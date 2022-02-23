@@ -1,52 +1,12 @@
 import {Bateau} from "./bateau";
 
 export const BATEAUX: Bateau[] = [
-    {
-        id: 1,
-        nom: "France 1",
-        image: "http://localhost:9999/img/bateau/France_1.jpg",
-        estOuvert: true
-    },
-    {
-        id: 2,
-        nom: "Saint Gilles",
-        image: "http://localhost:9999/img/bateau/Saint_Gilles.jpg",
-        estOuvert: true
-    },
-    {
-        id: 3,
-        nom: "TD 6",
-        image: "http://localhost:9999/img/bateau/TD_6.jpg",
-        estOuvert: false
-    },
-    {
-        id: 4,
-        nom: "Joshua",
-        image: "http://localhost:9999/img/bateau/Joshua.jpg",
-        estOuvert: false
-    },
-    {
-        id: 5,
-        nom: "Angoumois",
-        image: "http://localhost:9999/img/bateau/Angoumois.jpg",
-        estOuvert: true
-    },
-    {
-        id: 6,
-        nom: "Manuel Joel",
-        image: "http://localhost:9999/img/bateau/Manuel_Joel.jpg",
-        estOuvert: true
-    },
-    {
-        id: 7,
-        nom: "Le Canot Major Du Duperre",
-        image: "http://localhost:9999/img/bateau/Le_Canot_Major_Du_Duperre.jpg",
-        estOuvert: false
-    },
-    {
-        id: 8,
-        nom: "Capitaine De Fregate Leveger",
-        image: "http://localhost:9999/img/bateau/Capitaine_De_Fregate_Leveger.jpg",
-        estOuvert: true
-    }
+    {id:9, nom:"France 1", estOuvert: true, image:"http:\/\/localhost:9999\/img\/bateau\/France_1.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.15115060637095, longitude:-1.1517846515954095},
+    {id:10, nom:"Saint Gilles", estOuvert: true, image:"http:\/\/localhost:9999\/img\/bateau\/Saint_Gilles.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.151228107512134, longitude:-1.1515647190520417},
+    {id:11, nom:"TD 6", estOuvert: false, image:"http:\/\/localhost:9999\/img\/bateau\/TD_6.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.15067154739212, longitude:-1.1513769558188773},
+    {id:12, nom:"Joshua", estOuvert: false, image:"http:\/\/localhost:9999\/img\/bateau\/Joshua.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.150861077207864, longitude:-1.1513769558188773},
+    {id:13, nom:"Angoumois", estOuvert: true, image:"http:\/\/localhost:9999\/img\/bateau\/Angoumois.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.151039457614715, longitude:-1.1513769558188773},
+    {id:14, nom:"Manuel Joel", estOuvert: true, image:"http:\/\/localhost:9999\/img\/bateau\/Manuel_Joel.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.15056661238676, longitude:-1.1515003374354595},
+    {id:15, nom:"Le Canot Major Du Duperre", estOuvert: false, image:"http:\/\/localhost:9999\/img\/bateau\/Le_Canot_Major_Du_Duperre.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.151281013494135, longitude:-1.1513769558188773},
+    {id:16, nom:"Capitaine De Fregate Leveger", estOuvert: true, image:"http:\/\/localhost:9999\/img\/bateau\/Capitaine_De_Fregate_Leveger.jpg", infos_generale:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", histoire:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sed similique deleniti blanditiis, dicta rerum voluptatem laudantium quo eius reprehenderit consectetur voluptatibus optio dignissimos iusto numquam. Similique veritatis unde sunt.", latitude:46.15162290615746, longitude:-1.1513769558188773}
 ];

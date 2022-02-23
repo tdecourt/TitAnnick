@@ -10,7 +10,15 @@ import { FlotteComponent } from './flotte/flotte.component';
 import { GalerieComponent } from './galerie/galerie.component';
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { AccueilHeaderComponent } from './accueil-header/accueil-header.component';
+import { MeteoComponent } from './meteo/meteo.component';
 import { MapComponent } from './map/map.component';
+import { BateauDetailComponent } from './bateau-detail/bateau-detail.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,10 +29,16 @@ import { MapComponent } from './map/map.component';
     GalerieComponent,
     MenuBarComponent,
     AccueilHeaderComponent,
+    BateauDetailComponent,
+    MeteoComponent,
     MapComponent
   ],
 
   imports: [
+    MatTabsModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
@@ -32,7 +46,8 @@ import { MapComponent } from './map/map.component';
       { path: "galerie", component: GalerieComponent },
       { path: "bateaux", component: FlotteComponent },
       { path: "bateaux/:bateauId", component: BateauComponent }
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
